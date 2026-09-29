@@ -101,7 +101,7 @@ Built with developers in mind, offering straightforward integration patterns and
 
 - Sandbox testing environments
 
-### 3. Tech Stack
+## 3. Tech Stack
 
 RiskGuard is built using a modern full-stack TypeScript architecture.
 
@@ -115,40 +115,43 @@ Node.js: Server-side runtime
 Lucide: React Scalable vector interface icons
 GitHub: "Source control, CI/CD, and collaboration"
 
-# Design Principles
+## 4. Design Principles
 
 RiskGuard is developed around several core engineering principles:
 
-## Low Latency
+### Low Latency
 
 Risk evaluation and velocity checks must execute in sub-millisecond timeframes to prevent checkout friction.
 
-## Strict Tenant Isolation
+### Strict Tenant Isolation
 
 Organizations and API keys must maintain strict data boundaries so tenants never leak state across workspaces.
 
-## Developer First
+### Developer First
 
 APIs and SDKs must be intuitive, predictable, and fully typed using TypeScript.
 
-## Resilience & Scalability
+### Resilience & Scalability
 
 The architecture is designed to scale horizontally across edge runtimes and cloud databases.
 
-## Security by Default
+### Security by Default
 
 Authentication, authorization, environment protection, and secret management are enforced at every layer.
 
 ## 5. How to Run It Locally
 
 ### Prerequisites
+
 Make sure you have installed:
 
+```text
 Node.js 20+
 
 Git
 
 MongoDB / MongoDB Atlas account
+```
 
 Clone the Repository
 
