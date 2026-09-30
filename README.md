@@ -143,7 +143,7 @@ Authentication, authorization, environment protection, and secret management are
 
 ### Prerequisites
 
-Make sure you have installed:
+1. Make sure you have installed:
 
 ```text
 Node.js 20+
@@ -153,73 +153,86 @@ Git
 MongoDB / MongoDB Atlas account
 ```
 
-Clone the Repository
+2. Clone the Repository: 
 
+```text
 git clone https://github.com/YOUR_USERNAME/riskguard.git
 
 cd riskguard
+```
 
-Install Dependencies
+3. Install Dependencies
 
+```
 npm install
+```
 
-Configure Environment Variables
+4. Configure Environment Variables: 
 
-Create a local environment file from the .env.example template:
+Create a local environment file from the `.env.example` template:
 
 Then configure your local environment variables (see the Environment Variables section below).
 
-Start the Development Server
+5. Start the Development Server
 
+```text
 npm run dev
+```
 
 The application will be available at:
 
 http://localhost:3000
 
-Run Linting
+6. Run Linting
 
+```text
 npm run lint
+```
 
-Run TypeScript Validation
+7. Run TypeScript Validation
 
+```text
 npx tsc --noEmit
+```
 
-Create a Production Build
+8. Create a Production Build
 
+```text
 npm run build
+```
 
-Start the Production Server
+9. Start the Production Server
 
+```
 npm start
+```
 
 ## 6. Environment Variables
 
 RiskGuard uses environment variables for sensitive configuration and service credentials.
 
-Create a .env.local file in the root of the project.
+Create a `.env.local` file in the root of the project.
 
-Example:
+With these values:
 
+```text
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 MONGODB_URI=mongodb+srv://...
 NEXTAUTH_SECRET=...
 PADDLE_API_KEY=...
 PADDLE_WEBHOOK_SECRET=...
 REDIS_URL=...
+```
 
-Important: Never commit .env.local or production secrets to GitHub.
+Important: Never commit `.env.local` or production secrets to GitHub.
 
-Environment Security
-The following patterns must never be committed:
-
-# Project Status
+## Project Status
 
 🚧 Active Development
 
 RiskGuard is currently under active development. Core architectural components, APIs, and UI modules are evolving rapidly.
 
-# Contributing
+## Contributing
 
 Contributions, feedback, and architectural discussions are welcome.
 
@@ -231,6 +244,6 @@ If you encounter a bug or have a suggestion for improving RiskGuard, please open
 
 3. The expected impact on security or performance
 
-# License
+## License
 
 This project is licensed under the terms of the MIT License. See the LICENSE file for details.
